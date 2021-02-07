@@ -36,13 +36,21 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            marginTop: `2rem`,
-            background: "0C0E48"
+            marginTop: ``,
+            background: `#333333`,
+            color: `#fff`,
+            height: `75px`,
+            display: `flex`,
+            justifyContent: `center`,
+            alignItems: `center`,
+            paddingTop: `30px`,
           }}
         >
+          <p>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a> by <a href="https://www.linkedin.com/in/brianaruff/">Brian Ruff</a>
+          <a style={{color: `#C0CC42`}} href="https://www.gatsbyjs.com">Gatsby</a> by <a style={{color: `#C0CC42`}} href="https://www.linkedin.com/in/brianaruff/">Brian Ruff</a>
+          </p>
         </footer>
       </div>
     </>

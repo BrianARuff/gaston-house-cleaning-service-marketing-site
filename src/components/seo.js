@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
+
   return (
     <Helmet
       htmlAttributes={{
@@ -58,7 +59,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: site.siteMetadata?.author || `gaming_ruffles`,
         },
         {
           name: `twitter:title`,

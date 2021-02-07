@@ -12,17 +12,68 @@ html {
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
 }
 
 .left {
   margin: 2.5rem 0;
 }
-.left-header {}
 .left-description {
   font-family: Open-Sans;
+}
+.tool-tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dashed black;
+}
+.tool-tip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+}
+.tool-tip .tool-tip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tool-tip:hover .tool-tip-text {
+  visibility: visible;
+  opacity: 1;
+}
+.tool-tip-text ul {
+  text-decoration: none;
+  list-style-type: disc;
+  text-align: left;
 }
 
 .right {
@@ -42,7 +93,7 @@ html {
   margin-top: 0;
 }
 .plan-1, .plan-2 {
-  border: 1px solid black;
+  border: 1px solid #373830;
   border-radius: 5px;
   height: 650px;
   margin: 1rem 1rem 1rem 0rem;
@@ -54,7 +105,7 @@ html {
 }
 .plan-1-service-grid {
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: 1fr;
   width: 100%;
 }
 .plan-1-service-image {
@@ -66,18 +117,27 @@ html {
 .plan-1-title, .plan-2-title {
   padding: 1rem 0 0 0;
   margin-bottom: 0;
-  border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0px;
   flex: 0 0 100%;
   text-align: center;
   background-color: #25479E;
   color: #fff;
   height: 75px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid black;
 }
 
+.plan-2 {
+  margin-right: 0;
+}
 .plan-2-service-grid {
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: 1fr;
 }
 .plan-2-service-image {
   background-image: url("../images/premium-image.png");
@@ -99,14 +159,24 @@ html {
 /* Mobile Phone */
 @media (max-width: 425px) {
   .grid-container {
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: 1fr;
+    
   }
   .service-plans-list {
-    grid-template-columns: repeat(auto-fill, 100%);
+    grid-template-columns: 1fr;
+    
   }
   .plan-1, .plan-2 {
     margin: 1rem 0;
+    border: 0px;
   }
+  .plan-1-title, .plan-2-title {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
 }
 
 
