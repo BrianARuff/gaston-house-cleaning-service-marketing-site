@@ -1,3 +1,117 @@
+/* Start */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: Open-Sans;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.left {
+  margin: 2.5rem 0;
+}
+.left-header {}
+.left-description {
+  font-family: Open-Sans;
+}
+
+.right {
+  background-size: cover;
+  background-image: url("../images/right-image.jpg");
+  background-position: bottom;
+  height: 400px;
+  width: 100%;
+}
+
+.service-plans-header {
+  margin-bottom: 0;
+}
+.service-plans-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50%);
+  margin-top: 0;
+}
+.plan-1, .plan-2 {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 650px;
+  margin: 1rem 1rem 1rem 0rem;
+}
+.plan-1 {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.plan-1-service-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  width: 100%;
+}
+.plan-1-service-image {
+  background-image: url("../images/basic-image.png");
+  background-size: cover;
+  background-position: 50% 0%;
+  height: 400px;
+}
+.plan-1-title, .plan-2-title {
+  padding: 1rem 0 0 0;
+  margin-bottom: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  flex: 0 0 100%;
+  text-align: center;
+  background-color: #25479E;
+  color: #fff;
+  height: 75px;
+}
+
+.plan-2-service-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+.plan-2-service-image {
+  background-image: url("../images/premium-image.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  width: 100%;
+}
+
+.plan-1-service-list, .plan-2-service-list {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Mobile Phone */
+@media (max-width: 425px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .service-plans-list {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  .plan-1, .plan-2 {
+    margin: 1rem 0;
+  }
+}
+
+
+
+/* End */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -595,3 +709,5 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
