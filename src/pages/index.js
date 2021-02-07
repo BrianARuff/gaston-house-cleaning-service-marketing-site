@@ -43,7 +43,7 @@ const IndexPage = () => (
                 <h5>Schedule a One Time Cleaning</h5>
               </li>
               <li>
-                <p>Just need a one time cleaning? We have got you covered. Our cleaning technitians will come out and get your home cleaned.</p>
+                <p>Just need a one time cleaning? We have got you covered. Our cleaning technicians will come out and get your home cleaned.</p>
               </li>
             </ul>
           </div>
