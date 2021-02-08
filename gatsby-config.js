@@ -24,7 +24,55 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/broom-32x32.png`, // This path is relative to the root of the site.
+        icons: [
+          {
+            src: `src/images/broom-32x32.png`,
+            sizes: `32x32`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-48x48.png`,
+            sizes: `48x48`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-72x72.png`,
+            sizes: `72x72`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-96x96.png`,
+            sizes: `96x96`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-144x144.png`,
+            sizes: `144x144`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-256x256.png`,
+            sizes: `256x256`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-384x384.png`,
+            sizes: `384x384`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/broom-144x144.png`,
+            sizes: `144x144`,
+            type: `image/png`,
+            purpose: `any maskable`
+          }
+        ]
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

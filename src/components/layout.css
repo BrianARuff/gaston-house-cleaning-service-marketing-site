@@ -3,7 +3,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,7 +24,6 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 50%);
-  ;
 }
 
 .left {
@@ -92,14 +93,15 @@ main {
   grid-template-columns: repeat(auto-fill, 50%);
   margin-top: 0;
 }
-.plan-1, .plan-2 {
+.plan-1,
+.plan-2 {
   border: 1px solid #373830;
   border-radius: 5px;
   height: 650px;
   margin: 1rem 1rem 1rem 0rem;
 }
 .plan-1 {
-  display:flex;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
@@ -114,22 +116,22 @@ main {
   background-position: 50% 0%;
   height: 400px;
 }
-.plan-1-title, .plan-2-title {
+.plan-1-title,
+.plan-2-title {
   padding: 1rem 0 0 0;
   margin-bottom: 0;
   border-radius: 0px;
   flex: 0 0 100%;
   text-align: center;
-  background-color: #25479E;
+  background-color: #25479e;
   color: #fff;
-  height: 75px;
+  height: 3.125rem;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  border: 1px solid black;
 }
 
 .plan-2 {
@@ -147,7 +149,8 @@ main {
   width: 100%;
 }
 
-.plan-1-service-list, .plan-2-service-list {
+.plan-1-service-list,
+.plan-2-service-list {
   padding: 1rem;
   list-style-type: none;
 }
@@ -160,26 +163,24 @@ main {
 @media (max-width: 425px) {
   .grid-container {
     grid-template-columns: 1fr;
-    
   }
   .service-plans-list {
     grid-template-columns: 1fr;
-    
   }
-  .plan-1, .plan-2 {
+  .plan-1,
+  .plan-2 {
     margin: 1rem 0;
     border: 0px;
   }
-  .plan-1-title, .plan-2-title {
+  .plan-1-title,
+  .plan-2-title {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+  }
 }
-}
-
-
 
 /* End */
 html {
@@ -779,5 +780,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
-
