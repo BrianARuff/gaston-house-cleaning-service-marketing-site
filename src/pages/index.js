@@ -1,5 +1,4 @@
-import "react-app-polyfill/ie11";
-import "react-app-polyfill/stable";
+// index
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
