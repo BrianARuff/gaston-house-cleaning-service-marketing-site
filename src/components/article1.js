@@ -3,14 +3,13 @@ import React from "react";
 const article1 = props => {
   return (
     <article className="left">
-      <h3 className="left-header">We do the Heavy Lifting for You</h3>
+      <h2 className="left-header">We do the Heavy Lifting for You</h2>
       <p className="left-description">
         Gaston Home Cleaning Services will do the heavy lifting for you. You
         deserve a clean home, let us work hard for you.{" "}
-      </p>
-      <p>
-        We offer in home cleaning services in the{" "}
-        <span className={"tool-tip"}>
+
+         We offer in home cleaning services in the{" "}</p>
+        <div className={"tool-tip"}>
           <strong>Charlotte Metropolitan Area</strong>
           <div className={"tool-tip-text"}>
             <ul>
@@ -21,8 +20,7 @@ const article1 = props => {
               <li>Mecklenburg County</li>
             </ul>
           </div>
-        </span>
-      </p>
+        </div>
       <p>
         <strong>
           <a href="tel:980-240-6927">Schedule Appointment</a>

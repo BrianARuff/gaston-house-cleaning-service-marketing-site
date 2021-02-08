@@ -79,7 +79,7 @@ main {
 
 .right {
   background-size: cover;
-  background-image: url("../images/right-image.jpg");
+  background-image: url("../images/right-image.webp");
   background-position: bottom;
   height: 400px;
   width: 100%;
@@ -111,7 +111,7 @@ main {
   width: 100%;
 }
 .plan-1-service-image {
-  background-image: url("../images/basic-image.png");
+  background-image: url("../images/basic-image.webp");
   background-size: cover;
   background-position: 50% 0%;
   height: 400px;
@@ -142,7 +142,7 @@ main {
   grid-template-columns: 1fr;
 }
 .plan-2-service-image {
-  background-image: url("../images/premium-image.png");
+  background-image: url("../images/premium-image.webp");
   background-size: cover;
   background-position: bottom;
   height: 400px;
