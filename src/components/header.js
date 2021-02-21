@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
       background: `#25479E`,
@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          Gaston Home Cleaning Service
+          Gastonia House Cleaning
         </Link>
       </h1>
     </div>

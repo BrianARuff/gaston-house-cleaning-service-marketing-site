@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gaston Home Cleaning Service`,
+    title: `Gastonia House Cleaning`,
     description: `The best home cleaning service in the Charlotte Metropolitan area.`,
     author: `Brian Ruff`,
+    region: `Gastonia`,
+    rel: "canonical"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
