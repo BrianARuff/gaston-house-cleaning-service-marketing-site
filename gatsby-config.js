@@ -5,6 +5,10 @@ module.exports = {
     author: `Brian Ruff`,
     region: `Gastonia`,
     rel: "canonical",
+    region: "US-NC",
+    placename: "Gastonia",
+    ICBM: "35.2621,-81.1873",
+    position: "35.2621,-81.1873"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
