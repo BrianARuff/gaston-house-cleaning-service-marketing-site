@@ -4,7 +4,7 @@ module.exports = {
     description: `The best home cleaning service in the Charlotte Metropolitan area.`,
     author: `Brian Ruff`,
     region: `Gastonia`,
-    rel: "canonical"
+    rel: "canonical",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
