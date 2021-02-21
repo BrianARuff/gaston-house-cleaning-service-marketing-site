@@ -63,7 +63,7 @@ function SEO({ description, lang, meta, title, rel }) {
         },
         {
           property: "og:image",
-          content: "../images/premium-image.jpg"
+          content: "src/images/premium-image.jpg"
         },
         {
           name: `twitter:card`,
